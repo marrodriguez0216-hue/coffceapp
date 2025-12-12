@@ -69,3 +69,25 @@ public class Customer {
 
 }
 
+ublic class menuOrder extends AppCompatActivity {
+    TextView greetingText;
+    ImageButton black_ice;
+    ImageButton coffee;
+int total bill;
+    @SuppressLint("SetTextI18n")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+setContentView(R.layout.menuorder);
+
+         greetingText = findViewById(R.id.greetingText);
+         black_ice = findViewById(R.id.black_ice);
+         coffee = findViewById(R.id.coffee);
+
+         String name = greetingText.set("customerName");
+
+         greetingText.setText("Hello"+ name + "!");
+
+
+
+
