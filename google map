@@ -1,0 +1,25 @@
+package com.example.restaurantsapp;
+
+import androidx.annotation.NonNull;
+import.com.google.android.gms.maps.GoogleMap;
+import.com.google.android.gms.maps.SupportMapFragment;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class googleMap extends AppCompatActivity {
+    private GoogleMap myMap;
+
+protected  vpid OnCreate(bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    set.ContentView(R.layout.)
+SupportMapFragment mapFragment =(SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+maoFragemnt.getMapAsync(callingback this);
+
+}
+
+@Override
+ public void ONmAPrEDAY(@NonNull GoogleMap GoogleMap){
+        LatLng location = new LatLng(  ,  );
+googleMap.addMarker(new MakerOptions().position(location).title());
+googleMap.moveCamra(CameraUpdatedFactory).newLatLngZoom(location, zoom:12));
+        }
+}
